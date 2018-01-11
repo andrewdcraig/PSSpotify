@@ -3,7 +3,7 @@ $currentPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 $_AuthorizationEndpoint = "https://accounts.spotify.com/authorize"
 $_TokenEndpoint = "https://accounts.spotify.com/api/token"
 $_RootAPIEndpoint = "https://api.spotify.com/v1"
-$_RedirectUri = "https://localhost:8001"
+$_RedirectUri = "https://localhost:8888/callback"
 
 Import-LocalizedData -BindingVariable Strings -BaseDirectory $currentPath\..\Localized -FileName Strings.psd1 -UICulture en-US
 
